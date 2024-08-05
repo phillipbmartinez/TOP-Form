@@ -1,0 +1,19 @@
+#mainContainer{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid;
+    background-image: url("images/jon-tyson-unsplash.jpg");
+}
+#leftHalf{
+    display: flex;
+    width: 25%;
+}
+#rightHalf{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+}
+#odinLogo{
+    width: 200px;
+    height: 300px;
+}
