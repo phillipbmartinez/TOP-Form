@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
-    <link rel="styleheet" href="form.css">
+    <link rel="stylesheet" href="form.css">
 </head>
 <body>
     <div id="mainContainer">
@@ -13,7 +13,7 @@
                 <img id="odinLogo" src="images/odin-lined.png" alt="The Odin Project logo">
             </div>
             <div id="secondLeft">
-                <p>Photo by Jon Tyson on Unsplash</p>
+                <p id="creditText">Photo by <a href="https://unsplash.com/@jontyson">Jon Tyson</a> on <a href="https://unsplash.com/">Unsplash</a></p>
             </div>
         </div>
         <div id="rightHalf">
@@ -21,16 +21,16 @@
             <div id="secondRight">
                 <form id="form">
                     <h3>Let's do this!</h3>
-                    <label for="firstName">First Name</label>
-                    <input id="firstName" name="firstName">
+                    <label for="firstName">First Name</label><br>
+                    <input class="leftInputs" id="firstName" name="firstName">
                     <label for="lastName" type="text">Last Name</label>
-                    <input id="lastName" type="text" name="lastName">
-                    <label for="email">Email</label>
-                    <input id="email" type="email" name="email">
+                    <input id="lastName" type="text" name="lastName"><br>
+                    <label for="email">Email</label><br>
+                    <input class="leftInputs" id="email" type="email" name="email">
                     <label for="phoneNumber">Phone Number</label>
-                    <input id="phoneNumber" type="tel" name="phoneNumber">
-                    <label for="password">Password</label>
-                    <input id="password" type="password" name="password">
+                    <input id="phoneNumber" type="tel" name="phoneNumber"><br>
+                    <label for="password">Password</label><br>
+                    <input class="leftInputs" id="password" type="password" name="password">
                     <label for="confirmPassword">Confirm Password</label>
                     <input id="confirmPassword" type="password" name="confirmPassword">
                 </form>
