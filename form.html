@@ -10,7 +10,7 @@
     <div id="mainContainer">
         <div id="leftHalf">
             <div id="firstLeft">
-                <img id="odinLogo" src="images/odin-lined.png" alt="The Odin Project logo">
+                <img id="odinLogo" src="images/odin-lined.png" alt="The Odin Project logo"><span id="odinText">ODIN</span>
             </div>
             <div id="secondLeft">
                 <p id="creditText">Photo by <a href="https://unsplash.com/@jontyson">Jon Tyson</a> on <a href="https://unsplash.com/">Unsplash</a></p>
@@ -19,25 +19,35 @@
         <div id="rightHalf">
             <div id="firstRight">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet reprehenderit nam, facilis quam cumque eius voluptatem quisquam repudiandae incidunt ipsum quas accusantium impedit minus beatae voluptate quibusdam autem consectetur consequuntur!</div>
             <div id="secondRight">
-                <form id="form">
+                <div>
                     <h3>Let's do this!</h3>
-                    <label for="firstName">First Name</label><br>
-                    <input class="leftInputs" id="firstName" name="firstName">
-                    <label for="lastName" type="text">Last Name</label>
-                    <input id="lastName" type="text" name="lastName"><br>
-                    <label for="email">Email</label><br>
-                    <input class="leftInputs" id="email" type="email" name="email">
-                    <label for="phoneNumber">Phone Number</label>
-                    <input id="phoneNumber" type="tel" name="phoneNumber"><br>
-                    <label for="password">Password</label><br>
-                    <input class="leftInputs" id="password" type="password" name="password">
-                    <label for="confirmPassword">Confirm Password</label>
-                    <input id="confirmPassword" type="password" name="confirmPassword">
+                </div>
+                <form id="form">
+                    <div id="leftInputsDiv">
+                        <label for="firstName">First Name</label>
+                        <input class="leftInputs" id="firstName" name="firstName">
+
+                        <label for="email">Email</label>
+                        <input class="leftInputs" id="email" type="email" name="email">
+
+                        <label for="password">Password</label>
+                        <input class="leftInputs" id="password" type="password" name="password">
+                    </div>
+                    <div id="rightInputsDiv">
+                        <label for="lastName" type="text">Last Name</label>
+                        <input class="rightInputs" id="lastName" type="text" name="lastName">
+                        
+                        <label for="phoneNumber">Phone Number</label>
+                        <input class="rightInputs" id="phoneNumber" type="tel" name="phoneNumber">
+                        
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input class="rightInputs" id="confirmPassword" type="password" name="confirmPassword">
+                    </div>
                 </form>
             </div>
             <div id="thirdRight">
                 <button id="createAccount" type="submit">Create Account</button>
-                <p>Already have an account? Log in</p>
+                <p>Already have an account? <span id="logInText">Log in</span></p>
             </div>
         </div>
     </div>

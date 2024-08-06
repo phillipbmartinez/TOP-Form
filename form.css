@@ -18,12 +18,29 @@ html, body {
 }
 #leftHalf{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     width: 35%;
     background-image: url("images/jon-tyson-unsplash.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    color: white;
+}
+#firstLeft{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.500);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#secondLeft{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+#odinText{
+    font-size: 5rem;
 }
 #rightHalf{
     display: flex;
@@ -31,18 +48,58 @@ html, body {
     width: 65%;
 }
 #firstRight{
+    display: flex;
     background-color: rgb(246, 244, 244);
     height: 33%;
     padding-left: 30px;
     padding-right: 250px;
+    padding-top: 20px;
 }
 #secondRight{
-    height: 33%;
-    padding-left: 30px;
-    padding-right: 250px;
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+    padding: 20px 50px 20px 30px;
+    justify-content: center;
+    box-sizing: border-box;
+}
+#form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 800px;
+}
+form label{
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+form input{
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+#leftInputsDiv{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-right: 10px;
 }
 .leftInputs{
-    margin-right: 10px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+.rightInputs{
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+#rightInputsDiv{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin-left: 10px;
 }
 #thirdRight{
     background-color: rgb(246, 244, 244);
@@ -57,8 +114,32 @@ html, body {
 #creditText{
     color: white;
     text-align: center;
-    
 }
 a{
     color: white;
+}
+#createAccount{
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px 25px;
+    margin-top: 20px;
+    background-color: #596D48;
+    color: white;
+    font-weight: bold;
+    font-family: projectFont;
+}
+#logInText{
+    color: #596D48;
+}
+.passwordValid{
+    border: 2px solid green;
+}
+.passwordInvalid{
+    border: 2px solid red;
+}
+.passwordsMatch{
+    border: 2px solid green;
+}
+.passwordsDontMatch{
+    border: 2px solid red;
 }
